@@ -1,0 +1,187 @@
+    .get-students-plagin {
+        min-height: 300px;
+    }
+
+    .get-courses-section {
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .get-groups-section {
+        margin-bottom: 40px;
+    }
+
+    .custom-dropdown-select {
+        width: 200px;
+        position: relative;
+        height: 50px;
+        margin-bottom: 150px;
+        margin: 0 auto;
+
+    }
+
+    .custom-dropdown-select.is-active-select .custom-select-list {
+        display: block;
+    }
+
+    .custom-dropdown-select.is-active-select .custom-select-item-arrow {
+        transform: rotate(180deg);
+        transition: transform 0.2s;
+    }
+
+    .custom-select-item-arrow {
+        transform: rotate(0deg);
+        transition: transform 0.2s;
+    }
+
+    .custom-select-container {
+        width: 100%;
+        height: 50px;
+    }
+
+    .custom-select-selected {
+        width: 200px;
+        border-radius: 10px;
+        border: 1px solid #353535;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        cursor: pointer;
+    }
+
+    .current-select-item {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .custom-select-item-text {
+        cursor: pointer;
+    }
+
+    .custom-select-list {
+        position: absolute;
+        border-radius: 10px;
+        border: 1px solid #353535;
+        width: 100%;
+        display: none;
+        left: 0;
+        right: 0;
+        background-color: white;
+    }
+
+    .custom-select-item {
+        padding-left: 15px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .custom-select-item-img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #107CAB;
+        margin-right: 15px;
+        object-fit: fill;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: fill;
+
+    }
+
+    .custom-select-item:hover {
+        outline: 1px solid #107CAB;
+        border-radius: 9px;
+        
+    }
+
+    .message{
+        text-align: center;
+        padding: 0;
+        color: #107CAB;
+        margin: 0;
+    
+    }
+    .students-by-group {
+        display: flex;
+        max-width: 260px;
+        border: 1px solid black;
+        margin: 0 auto;
+    }
+
+    .students-list-container {
+        width: 40%;
+        border-right: 1px solid black;
+    }
+
+    .student-item-container {
+        width: 60%;
+        padding-bottom: 30px;
+    }
+
+    .students-list-title {
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 1.2;
+        padding-top: 5px;
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+    .students-list {
+        list-style: none;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .student-list-item {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 12px;
+        padding: 0;
+    }
+    .student-list-item:hover {
+        background-color: #107CAB;
+        color: white;
+        transition: hover 1s;
+    }
+    .student-item-image {
+        min-height: 100px;
+        border-radius: 50%;
+        border: 1px solid;
+        margin-bottom: 10px;
+        width: 100px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .student-item-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .students-item-username {
+        margin: 0 auto;
+        max-width: 100px;
+        font-weight: normal;
+        font-size: 12px;
+    }

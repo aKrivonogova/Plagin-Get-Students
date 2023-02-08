@@ -1,0 +1,50 @@
+<div class="get-students-plagin">
+    <section class="get-courses-section">
+        <div class="custom-dropdown-select" id="courseList">
+            <div class="custom-select-selected">
+                <div class="current-select-item">
+                    <div class="custom-select-item-text">
+                        Выберите курс
+                    </div>
+                </div>
+                <div class="custom-select-item-arrow">
+                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z"
+                            fill="#353535" />
+                    </svg>
+                </div>
+            </div>
+            <div class="custom-select-list">
+                {{#isCourseListNotEmpty}}
+                {{#coursesListData}}
+                <div class="custom-select-item" data-id="{{id}}">
+                    <div class="custom-select-item-img">
+                        {{#hasImageCourse}}
+                        <img src="{{imgSrc}}" alt="">
+                        {{/hasImageCourse}}
+                        {{^hasImageCourse}}
+                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 2L2 6.33333L10 10.6667L16.5455 7.12056V12.1111H18V6.33333L10 2ZM4.90909 9.35222V12.2411L10 15L15.0909 12.2411V9.35222L10 12.1111L4.90909 9.35222Z" fill="white" />
+                        </svg>
+                        {{/hasImageCourse}}
+                    </div>
+                    <div class="custom-select-item-text">
+                        {{fullname}}
+                    </div>
+                </div>
+                {{/coursesListData}}
+                {{/isCourseListNotEmpty}}
+            </div>
+        </div>
+    </section>
+    <div class="get-group">
+        {{#isCourseListNotEmpty}}
+        <p class="message">Курс не выбран</p>
+        {{/isCourseListNotEmpty}}
+        {{^isCourseListNotEmpty}}
+        <p class="message"></p> Курсов нет! </p>
+        {{/isCourseListNotEmpty}}
+    </div>
+    <div class="get-students"></div>
+</div>
